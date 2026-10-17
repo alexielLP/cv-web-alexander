@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: #060B19;
+    color: #94A3B8;
+    overflow-x: hidden;
+  }
+
+  /* Custom dark scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #060B19;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #1E293B;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #10B981;
+  }
+}
+
+@layer utilities {
+  .glow-card {
+    border: 1px solid rgba(16, 185, 129, 0.35);
+    box-shadow: 0 0 35px rgba(16, 185, 129, 0.15);
+  }
+
+  .glow-card:hover {
+    box-shadow: 0 0 45px rgba(16, 185, 129, 0.25);
+  }
+
+  .badge-emerald {
+    background-color: rgba(16, 185, 129, 0.12);
+    color: #10B981;
+    border: 1px solid rgba(16, 185, 129, 0.25);
+  }
+
+  .tech-border {
+    border: 1px solid #1E293B;
+  }
+
+  .tech-card {
+    background: linear-gradient(180deg, #0B1222 0%, #080E20 100%);
+    border: 1px solid #1E293B;
+  }
+
+  .tech-card:hover {
+    border-color: rgba(16, 185, 129, 0.4);
+  }
+}
